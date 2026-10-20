@@ -1,0 +1,13 @@
+# Originals: never publish these. The site uses the cleaned copies in assets/.
+# (MCOM.pdf and the Mako PDF show his student ID and grades.)
+/*.pdf
+/*.jpeg
+/*.jpg
+/*.png
+/*.heic
+
+# Local tooling
+.claude/
+node_modules/
+.DS_Store
+Thumbs.db

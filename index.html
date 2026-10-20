@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed Abobakr — Design Portfolio</title>
+  <meta name="description" content="Ahmed Abobakr, design student at MSA University. Advertising, packaging, 3D characters and editorial research.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Gochi+Hand&family=Lalezar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="topbar__name" href="index.html" aria-current="page">Ahmed Abobakr</a>
+    <nav class="topbar__nav" aria-label="Main">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page page--index">
+    <!-- HERO: a plaster wall with pasted-up pieces. Everything with .drag can be moved. -->
+    <section class="wall" aria-label="Introduction">
+      <div class="wall__board" id="board">
+
+        <div class="poster poster--name shine">
+          <span class="twinkle" style="--tx:6%;--ty:12%;--d:0s" aria-hidden="true"></span>
+          <span class="twinkle twinkle--big" style="--tx:90%;--ty:8%;--d:.8s" aria-hidden="true"></span>
+          <span class="twinkle" style="--tx:84%;--ty:78%;--d:1.6s" aria-hidden="true"></span>
+          <span class="twinkle twinkle--big" style="--tx:10%;--ty:70%;--d:2.3s" aria-hidden="true"></span>
+          <p class="poster--name__ar" lang="ar" dir="rtl">أحمد أبوبكر</p>
+          <h1 class="poster--name__en">Ahmed<br>Abobakr</h1>
+          <p class="poster--name__role">Ads, packaging and 3D characters, made in Cairo</p>
+        </div>
+
+        <figure class="drag piece piece--photo" style="--x:8%;--y:6%;--r:-6deg" data-label="Portrait">
+          <img src="assets/photos/ahmed-selfie.jpg" alt="Ahmed, a low-angle selfie at night" draggable="false">
+          <figcaption>me, probably squinting</figcaption>
+        </figure>
+
+
+        <img class="drag piece piece--samba" style="--x:50%;--y:70%;--r:-10deg"
+             src="assets/work/sticker-samba.png" alt="Red Samba sneaker from the Bata Gen Z poster" draggable="false">
+
+
+        <figure class="drag piece piece--kawakeb shine" style="--x:77%;--y:52%;--r:5deg">
+          <img src="assets/work/sticker-kawakeb.jpg" alt="Two vintage covers of Al Kawakeb magazine" draggable="false">
+          <span class="tape tape--tl"></span><span class="tape tape--br"></span>
+        </figure>
+
+        <p class="note note--hello" style="--x:17%;--y:82%;--r:-3deg">
+          I make ads, packaging and 3D characters,<br>and I still read old Egyptian magazines for fun.
+        </p>
+
+        <p class="note note--drag" aria-hidden="true">pick things up<br>and move them ↘</p>
+
+        <button class="tidy" type="button" id="tidy">Put everything back</button>
+      </div>
+    </section>
+
+    <div class="strip" aria-label="Skills">
+      <div class="strip__track">
+        <span>Advertising</span><span>Art direction</span><span>Packaging</span><span>3D character design</span><span>Editorial research</span><span>Branding</span><span>Layout</span><span>Storytelling</span>
+        <span aria-hidden="true">Advertising</span><span aria-hidden="true">Art direction</span><span aria-hidden="true">Packaging</span><span aria-hidden="true">3D character design</span><span aria-hidden="true">Editorial research</span><span aria-hidden="true">Branding</span><span aria-hidden="true">Layout</span><span aria-hidden="true">Storytelling</span>
+      </div>
+    </div>
+
+    <div class="strip strip--ar" aria-hidden="true">
+      <div class="strip__track strip__track--reverse" lang="ar" dir="ltr">
+        <span>إعلانات</span><span>تغليف</span><span>شخصيات ثلاثية الأبعاد</span><span>إخراج فني</span><span>هوية بصرية</span><span>حكايات</span>
+        <span>إعلانات</span><span>تغليف</span><span>شخصيات ثلاثية الأبعاد</span><span>إخراج فني</span><span>هوية بصرية</span><span>حكايات</span>
+      </div>
+    </div>
+
+    <!-- What his style looks like, pulled from the actual work -->
+    <section class="style" aria-labelledby="style-title">
+      <div class="style__intro reveal">
+        <h2 class="stencil" id="style-title">One designer,<br>four moods</h2>
+        <p>My work changes outfits depending on the brief, but it always has the same habit: every piece has to sell something <em>and</em> tell a story. Here’s what that looks like.</p>
+      </div>
+
+      <div class="moods">
+        <article class="mood reveal" style="--r:-2deg">
+          <div class="mood__img shine"><img src="assets/work/bata-poster-01.jpg" alt="Heritage loafers lit by warm studio light" loading="lazy"></div>
+          <h3>Warm studio light</h3>
+          <p>Soft shadows, stacked wood and palm-leaf light. The kind of calm that makes a pair of loafers look like they’ve been around since 1987.</p>
+        </article>
+        <article class="mood reveal" style="--r:1.5deg">
+          <div class="mood__img mood__img--white shine"><img src="assets/work/bata-cupholder-01.png" alt="Bendy two-colour Gen Z Shoe wordmark" loading="lazy"></div>
+          <h3>Loud, bendy type</h3>
+          <p>Wordmarks that wobble, split into two colours and refuse to sit still. Built to be read across a café or in half a second of scrolling.</p>
+        </article>
+        <article class="mood reveal" style="--r:-1deg">
+          <div class="mood__img shine"><img src="assets/work/sticker-mako-env.jpg" alt="Mako in a rusty workshop lit by cyan screens" loading="lazy"></div>
+          <h3>Grit with a glow</h3>
+          <p>Rusty workshops lit by cyan screens, and characters who have a reason to be there. Every bolt on the floor has a backstory.</p>
+        </article>
+        <article class="mood reveal" style="--r:2deg">
+          <div class="mood__img shine"><img src="assets/work/sticker-kawakeb.jpg" alt="Vintage Al Kawakeb magazine covers" loading="lazy"></div>
+          <h3>Archive eyes</h3>
+          <p>I dig through old Egyptian magazines and comics for lettering, colour and the way they spoke to readers, then bring that back into new work.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="can" aria-labelledby="can-title">
+      <h2 class="stencil stencil--dark reveal" id="can-title">What I can make for you</h2>
+      <ul class="can__list">
+        <li class="reveal"><strong>Ad campaigns and key visuals</strong><span>One idea stretched across posters, flyers and social posts without losing its voice.</span></li>
+        <li class="reveal"><strong>Social posts and flyers</strong><span>Feed-ready layouts with a clear price, a clear product and a reason to stop scrolling.</span></li>
+        <li class="reveal"><strong>Packaging</strong><span>Cup holders, sleeves and boxes that carry the campaign into people’s hands.</span></li>
+        <li class="reveal"><strong>3D characters and worlds</strong><span>Modelling, outfits and lit environments, with a story written before the first polygon.</span></li>
+        <li class="reveal"><strong>Catalogues and editorial</strong><span>Covers and spreads with copy that sounds like the brand, not like filler.</span></li>
+        <li class="reveal"><strong>Visual research</strong><span>Reading the references, the history and the audience so the design has something to stand on.</span></li>
+      </ul>
+    </section>
+
+    <p class="manifesto reveal">
+      <span class="manifesto__line">Make it sell.</span>
+      <span class="manifesto__line">Make it mean something.</span>
+      <span class="manifesto__line manifesto__line--glint">Make it shine.</span>
+    </p>
+
+    <nav class="doors" aria-label="Pages">
+      <a class="door door--work shine" href="work.html"><span class="door__title">Work</span><span class="door__sub">Five projects: Bata posters, a cup holder, a catalogue cover, Mako, and a dig through Egypt’s children’s press. Every one opens as the full PDF.</span></a>
+      <a class="door door--about shine" href="about.html"><span class="door__title">About</span><span class="door__sub">Where I study, how I work, and why I keep a stack of old magazines on my desk.</span></a>
+      <a class="door door--contact shine" href="contact.html"><span class="door__title">Contact</span><span class="door__sub">Campaigns, packaging, characters or a cover. Send the brief and I’ll send back ideas.</span></a>
+    </nav>
+  </main>
+
+  <div class="pins">
+    <img class="drag pin pin--genz" id="pin-genz" src="assets/work/bata-cupholder-02.png" alt="Gen Z Shoe sticker" draggable="false">
+    <img class="drag pin pin--mako" id="pin-mako" src="assets/work/sticker-mako.png" alt="Mako, Ahmed's 3D character" draggable="false">
+  </div>
+
+  <footer class="footer">
+    <p>Ahmed Abobakr, 2026. <a href="mailto:ahmedkedrk@gmail.com">ahmedkedrk@gmail.com</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

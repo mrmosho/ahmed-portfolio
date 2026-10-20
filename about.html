@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Ahmed Abobakr</title>
+  <meta name="description" content="About Ahmed Abobakr, a design student at MSA University in Cairo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Gochi+Hand&family=Lalezar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="topbar__name" href="index.html">Ahmed Abobakr</a>
+    <nav class="topbar__nav" aria-label="Main">
+      <a href="work.html">Work</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page page--about">
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__photo drag-free shine">
+        <img src="assets/photos/ahmed-night.jpg" alt="Ahmed standing in a courtyard at night next to a lit-up Christmas tree" loading="lazy">
+        <span class="tape tape--top"></span>
+      </div>
+      <div class="about__paper">
+        <h1 class="stencil stencil--dark" id="about-title">About</h1>
+        <p>I’m Ahmed, a design student at the Faculty of Arts &amp; Design at MSA University in Cairo, studying alongside the University of Bedfordshire programme.</p>
+        <p>I like work that has to sell something and still tell a story. That might be a shoe poster, a character with a backstory, or a fifty-year-old magazine cover I’m trying to understand.</p>
+        <p>I switch styles on purpose. A heritage loafer needs warm light and quiet type, a Gen Z sneaker needs noise, and a kid from a broken city needs rust and neon. What stays the same is the thinking: who is this for, what should they feel, and what will they remember.</p>
+        <p>I write my own copy too. Most of the headlines, manifestos and character backstories on this site started in my notes app before they became layouts.</p>
+        <dl class="facts">
+          <div><dt>Studying</dt><dd>Arts &amp; Design, MSA University</dd></div>
+          <div><dt>Based in</dt><dd>Cairo, Egypt</dd></div>
+          <div><dt>Speaks</dt><dd>Arabic and English, in design and in copy</dd></div>
+          <div><dt>Into</dt><dd>Old Egyptian magazines, sneakers, animated films</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- How he works: a real sequence, so it is numbered -->
+    <section class="process" aria-labelledby="process-title">
+      <h2 class="stencil reveal" id="process-title">How a project goes</h2>
+      <ol class="process__steps">
+        <li class="reveal shine"><h3>Dig</h3><p>Read the brief, then read around it: the brand’s history, the audience, the old ads, the competitors. The Kawakeb covers started as this kind of digging.</p></li>
+        <li class="reveal shine"><h3>Write it down</h3><p>Before any layout, I write the idea as a sentence or a story. Mako had a full backstory before he had a face.</p></li>
+        <li class="reveal shine"><h3>Make the mood</h3><p>Pick the light, the type and the colours that match the feeling. Warm wood for heritage, candy blobs for Gen Z, rust and cyan for a scrapyard genius.</p></li>
+        <li class="reveal shine"><h3>Build and polish</h3><p>Lay it out, model it or light it, then push it across every format it needs: poster, flyer, packaging, social.</p></li>
+      </ol>
+    </section>
+
+  </main>
+
+  <div class="pins">
+    <img class="drag pin pin--genz" id="pin-genz" src="assets/work/bata-cupholder-02.png" alt="Gen Z Shoe sticker" draggable="false">
+    <img class="drag pin pin--mako" id="pin-mako" src="assets/work/sticker-mako.png" alt="Mako, Ahmed's 3D character" draggable="false">
+  </div>
+
+  <footer class="footer">
+    <p>Ahmed Abobakr, 2026. <a href="mailto:ahmedkedrk@gmail.com">ahmedkedrk@gmail.com</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
